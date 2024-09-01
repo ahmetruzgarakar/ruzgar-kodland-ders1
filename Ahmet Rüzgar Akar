@@ -1,0 +1,16 @@
+dict = { 
+    "Araba": "Car",
+    "Uzay": "Space",
+    "Telefon": "Phone"
+}
+
+a = input("Bir kelime giriniz: ")
+
+if a in dict:
+    print(dict[a])
+elif a in dict.values():
+    for key, value in dict.items():
+        if value == a:
+            print(key) 
+else:
+    print("Bu kelime sözlükte yok.")
